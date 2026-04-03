@@ -6,7 +6,7 @@ import { analyzeRecentRuns } from "../.agents/skills/analyze-output/scripts/anal
 
 describe("analyze recent runs script", () => {
   test("includes safety recovery counts and fallback cause counts in recent summaries", async () => {
-    const repoRoot = await mkdtemp(path.join(os.tmpdir(), "ai-video-analyze-"));
+    const repoRoot = await mkdtemp(path.join(os.tmpdir(), "pad-pilot-visualizer-analyze-"));
     try {
       const debugRoot = path.join(repoRoot, "debug");
       const newerRun = path.join(debugRoot, "run-b");

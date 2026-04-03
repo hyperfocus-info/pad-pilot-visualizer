@@ -3,7 +3,7 @@
   "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "ai-video",
+      "name": "pad-pilot-visualizer",
       "dependencies": {
         "@napi-rs/canvas": "^0.1.77",
         "commander": "^14.0.1",

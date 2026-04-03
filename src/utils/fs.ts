@@ -7,7 +7,7 @@ export async function ensureDir(dir: string): Promise<void> {
   await mkdir(dir, { recursive: true });
 }
 
-export async function createTempWorkspace(prefix = "ai-video-"): Promise<{
+export async function createTempWorkspace(prefix = "pad-pilot-visualizer-"): Promise<{
   tempDir: string;
   audioDir: string;
   imageDir: string;
@@ -78,7 +78,7 @@ async function renameForDeferredCleanup(tempDir: string): Promise<string | undef
   const parent = path.dirname(tempDir);
   const nextPath = path.join(
     parent,
-    `ai-video-cleanup-${Date.now()}-${process.pid}-${Math.random().toString(36).slice(2, 8)}`,
+    `pad-pilot-visualizer-cleanup-${Date.now()}-${process.pid}-${Math.random().toString(36).slice(2, 8)}`,
   );
   await rename(tempDir, nextPath);
   return nextPath;

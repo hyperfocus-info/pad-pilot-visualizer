@@ -7,7 +7,7 @@ import { cleanupTemp, pathExists } from "./fs";
 const createdPaths: string[] = [];
 
 async function createTempFixture(name: string): Promise<string> {
-  const dir = path.join(tmpdir(), `ai-video-test-${name}-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`);
+  const dir = path.join(tmpdir(), `pad-pilot-visualizer-test-${name}-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`);
   createdPaths.push(dir);
   await mkdir(path.join(dir, "nested"), { recursive: true });
   await writeFile(path.join(dir, "nested", "file.txt"), "fixture", "utf8");

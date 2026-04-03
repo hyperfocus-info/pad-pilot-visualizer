@@ -130,7 +130,7 @@ function writeWavBuffer(samples: Float32Array): Buffer {
 }
 
 async function createTempDir(prefix: string): Promise<string> {
-  const dir = path.join(tmpdir(), `ai-video-${prefix}-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`);
+  const dir = path.join(tmpdir(), `pad-pilot-visualizer-${prefix}-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`);
   await mkdir(dir, { recursive: true });
   createdDirs.push(dir);
   return dir;

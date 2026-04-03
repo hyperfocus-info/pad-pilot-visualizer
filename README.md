@@ -1,8 +1,8 @@
-# AI Video
+# Pad Pilot Visualizer
 
 ## Purpose
 
-`ai-video` is a performance-first Bun CLI for turning music plus themed source imagery into stylized music videos. The project treats source images as structural input rather than literal final output, then builds a new visual surface around audio-reactive motifs, a hero-led frame language, and supporting atmosphere.
+`pad-pilot-visualizer` is a performance-first Bun CLI for turning music plus themed source imagery into stylized music videos. The project treats source images as structural input rather than literal final output, then builds a new visual surface around audio-reactive motifs, a hero-led frame language, and supporting atmosphere.
 
 ## What Belongs Here
 

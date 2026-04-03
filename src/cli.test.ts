@@ -131,7 +131,7 @@ describe("parseCliOptionsFromArgv", () => {
 
 describe("diagnostic state loading", () => {
   test("loads legacy state files that still contain baseSeed", async () => {
-    const root = path.join(tmpdir(), `ai-video-cli-state-${Date.now()}`);
+    const root = path.join(tmpdir(), `pad-pilot-visualizer-cli-state-${Date.now()}`);
     await mkdir(root, { recursive: true });
     const statePath = path.join(root, "legacy-state.json");
     const legacyState = {
@@ -165,7 +165,7 @@ describe("output defaults", () => {
   });
 
   test("appends a numbered suffix when the requested output already exists", async () => {
-    const root = path.join(tmpdir(), `ai-video-cli-output-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`);
+    const root = path.join(tmpdir(), `pad-pilot-visualizer-cli-output-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`);
     await mkdir(root, { recursive: true });
     const requested = path.join(root, "render.mp4");
     try {
@@ -177,7 +177,7 @@ describe("output defaults", () => {
   });
 
   test("skips to the next suffix when the matching debug directory already exists", async () => {
-    const root = path.join(tmpdir(), `ai-video-cli-debug-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`);
+    const root = path.join(tmpdir(), `pad-pilot-visualizer-cli-debug-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`);
     const requested = path.join(root, "render.mp4");
     const requestedDebugDir = resolveDebugDirForOutput(requested);
     const firstCollisionDebugDir = resolveDebugDirForOutput(path.join(root, "render(1).mp4"));
