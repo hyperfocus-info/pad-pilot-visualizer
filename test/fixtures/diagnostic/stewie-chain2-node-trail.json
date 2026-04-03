@@ -1,0 +1,34 @@
+{
+  "audioPath": "smoke-input.wav",
+  "imageSet": "stewie-chain2-node-trail",
+  "imagePaths": [
+    "debug/stewie-chain2/images/image-000-input.jpg",
+    "debug/stewie-chain2/images/image-001-input.jpg",
+    "debug/stewie-chain2/images/image-002-input.jpg",
+    "debug/stewie-chain2/images/image-003-input.jpg"
+  ],
+  "selectors": [
+    {
+      "type": "node",
+      "imageIndex": 1,
+      "phraseIndex": 1
+    }
+  ],
+  "sweepModes": ["visual"],
+  "renderSettings": {
+    "width": 1280,
+    "height": 720,
+    "fps": 30
+  },
+  "diagnosticOverrides": {
+    "trailEmissionGain": 1.12,
+    "trailCoolingGain": 1.18,
+    "jitterGain": 0.82
+  },
+  "acceptanceProfile": {
+    "grade": "B+",
+    "minHeroCoverage": 0.48,
+    "maxClutter": 0.34,
+    "minTrailContinuity": 0.62
+  }
+}

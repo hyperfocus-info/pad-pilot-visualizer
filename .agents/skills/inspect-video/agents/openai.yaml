@@ -1,0 +1,4 @@
+interface:
+  display_name: "Inspect Video"
+  short_description: "Troubleshoot final MP4 output with extracted frames."
+  default_prompt: "Use $inspect-video to verify whether a suspected bug actually appears in the final MP4 by comparing source images, debug stills, and extracted video frames."

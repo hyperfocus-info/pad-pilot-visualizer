@@ -1,0 +1,4 @@
+interface:
+  display_name: "Analyze Output"
+  short_description: "Review recent debug runs before final-video escalation."
+  default_prompt: "Use $analyze-output to inspect the last 5 runs, identify what broke or repeated, and tell me whether any windows need escalation to $inspect-video."

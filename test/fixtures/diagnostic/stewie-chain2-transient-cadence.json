@@ -1,0 +1,35 @@
+{
+  "audioPath": "smoke-input.wav",
+  "imageSet": "stewie-chain2-transient-cadence",
+  "imagePaths": [
+    "debug/stewie-chain2/images/image-004-input.jpg",
+    "debug/stewie-chain2/images/image-005-input.jpg",
+    "debug/stewie-chain2/images/image-006-input.jpg",
+    "debug/stewie-chain2/images/image-007-input.jpg",
+    "debug/stewie-chain2/images/image-008-input.jpg"
+  ],
+  "selectors": [
+    {
+      "type": "phrase-window",
+      "startSec": 4,
+      "endSec": 12
+    }
+  ],
+  "sweepModes": ["visual", "responsiveness"],
+  "renderSettings": {
+    "width": 1280,
+    "height": 720,
+    "fps": 30
+  },
+  "diagnosticOverrides": {
+    "thrustGain": 1.08,
+    "trailEmissionGain": 1.08,
+    "burstFanoutGain": 1.12
+  },
+  "acceptanceProfile": {
+    "grade": "B+",
+    "minHeroCoverage": 0.48,
+    "maxClutter": 0.36,
+    "minTrailContinuity": 0.58
+  }
+}

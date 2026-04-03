@@ -1,0 +1,34 @@
+{
+  "audioPath": "smoke-input.wav",
+  "imageSet": "stewie-chain2-held-transition",
+  "imagePaths": [
+    "debug/stewie-chain2/images/image-009-input.jpg",
+    "debug/stewie-chain2/images/image-010-input.jpg",
+    "debug/stewie-chain2/images/image-011-input.jpg",
+    "debug/stewie-chain2/images/image-012-input.jpg"
+  ],
+  "selectors": [
+    {
+      "type": "phrase-window",
+      "startSec": 2,
+      "endSec": 10
+    }
+  ],
+  "sweepModes": ["visual"],
+  "renderSettings": {
+    "width": 1280,
+    "height": 720,
+    "fps": 30
+  },
+  "diagnosticOverrides": {
+    "trailEmissionGain": 1.05,
+    "jitterGain": 0.88,
+    "burstFanoutGain": 1.06
+  },
+  "acceptanceProfile": {
+    "grade": "B+",
+    "minHeroCoverage": 0.46,
+    "maxClutter": 0.36,
+    "minTrailContinuity": 0.56
+  }
+}
